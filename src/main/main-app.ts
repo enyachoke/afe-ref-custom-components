@@ -1,6 +1,8 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import styles from './main.scss';
+import '../afe-diagram-embed';
+
 
 @customElement('main-app')
 export class MainElement extends LitElement {
@@ -39,6 +41,14 @@ export class MainElement extends LitElement {
     "module": "true",
     "detail": "This is custom component within a page it is displayed at the top of the page"
   }
+
+  diagramData = {
+    // properties specific to the diagram component
+    imageUrl: 'https://example.com/diagram-image.jpg',
+    
+  };
+
+
   constructor() {
     super();
   }
@@ -51,6 +61,9 @@ export class MainElement extends LitElement {
     </div>
     <div class="bx--row">
     <afe-content-display .config=${this.customDisplay} ></afe-content-display>
+    </div>
+    <div class="bx--row">
+    <afe-diagram-embed .data=${this.diagramData}></afe-diagram-embed>
     </div>
   </div>`;
   }

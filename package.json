@@ -23,7 +23,7 @@
     "@rollup/plugin-multi-entry": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.2.1",
     "@web/dev-server": "^0.1.17",
-    "node-sass": "^5.0.0",
+    "node-sass": "^9.0.0",
     "postcss": "^8.2.13",
     "rollup": "^2.46.0",
     "rollup-plugin-copy": "^3.4.0",
