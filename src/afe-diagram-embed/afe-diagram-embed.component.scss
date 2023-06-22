@@ -1,0 +1,51 @@
+@import 'carbon-components/scss/globals/scss/_vars.scss';
+
+:host(afe-diagram-embed) {
+  display: block;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+.diagram-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid $ui-03;
+}
+
+.annotation-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: $ui-01;
+  color: $text-01;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $ui-02;
+  }
+
+  &:active {
+    background-color: $ui-03;
+  }
+}
+
+.dark .annotation-button {
+  background-color: $ui-05;
+  color: $text-05;
+
+  &:hover {
+    background-color: $ui-04;
+  }
+
+  &:active {
+    background-color: $ui-03;
+  }
+}
